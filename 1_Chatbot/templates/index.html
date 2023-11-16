@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Submission</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        /* Additional CSS styles */
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+{% for para in thread %}
+   <p>{{ para }}</p>
+{% endfor %}
+
+    <!-- Main content -->
+    <div class="w3-content w3-padding">
+
+        <!-- Question form -->
+        <div class="container">
+            <h2 class="w3-center">Submit a Question</h2>
+            <form  method="post" class="w3-container">
+                <label for="question">Your Question:</label>
+                <textarea id="question" name="question" rows="4" cols="50" class="w3-input w3-border"></textarea>
+                <br>
+                <button type="submit" class="w3-button w3-black">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
