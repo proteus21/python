@@ -1,5 +1,5 @@
 import openai
-openai.api_key ='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'
+openai.api_key ='sk-xxxxxxxxxxxxxxxxxlbkFJ7PtiJXf8gADwGQCj9JwC'
 
 def get_response(message):
     response = openai.ChatCompletion.create(
